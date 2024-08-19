@@ -23,4 +23,4 @@ fp = open("sql.csv", "w")
 fp.write(text)
 fp.close()
 
-print "Saved sql.csv. Please import it in your database :-)"
+print ("Saved sql.csv. Please import it in your database :-)")

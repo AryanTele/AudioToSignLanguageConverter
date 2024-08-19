@@ -24,13 +24,13 @@ while len(line) > 0:
 		hamsym = l[0]
 		tagname = l[1]
 
-		print "Ham : " + str(hamsym)
-		print "Tag : " + str(tagname)
+		print ("Ham : " + str(hamsym))
+		print ("Tag : " + str(tagname))
 		inputtext = str(hamsym) + "," + str(tagname) + "\n"
 		fp2.write(inputtext)
 
 	except:
-		print "Error"
+		print ("Error")
 		error = error + 1
 	
 	count = count + 1
@@ -40,8 +40,8 @@ while len(line) > 0:
 fp.close()
 fp2.close()
 
-print "Count : " + str(count)
-print "Error : " + str(error)
+print ("Count : " + str(count))
+print ("Error : " + str(error))
 
 exit()
 

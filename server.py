@@ -22,8 +22,7 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 print(BASE_DIR)
 # Download zip file from https://nlp.stanford.edu/software/stanford-parser-full-2015-04-20.zip and extract in stanford-parser-full-2015-04-20 folder in higher directory
 os.environ['CLASSPATH'] = os.path.join(BASE_DIR, 'stanford-parser-full-2018-10-17')
-os.environ['STANFORD_MODELS'] = os.path.join(BASE_DIR,
-                                             'stanford-parser-full-2018-10-17/edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz')
+os.environ['STANFORD_MODELS'] = os.path.join(BASE_DIR, 'stanford-parser-full-2018-10-17/edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz')
 os.environ['NLTK_DATA'] = '/usr/local/share/nltk_data/'
 
 
@@ -153,7 +152,7 @@ def convert_eng_to_isl(input_string):
     # get all required packages
     download_required_packages()
 
-    if len(list(input_string.split(' '))) is 1:
+    if len(list(input_string.split(' '))) == 1:
         return list(input_string.split(' '))
 
     # Initializing stanford parser
